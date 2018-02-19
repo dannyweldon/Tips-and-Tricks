@@ -11,30 +11,30 @@ Well, there is an undocumented feature of child router. The child router `config
 
 **This means we can do this:**
 
-```javascript
+```
 export class User() {
-configureRouter(config, router, params) {
-this.router = router;
-this.id = params.id;
+    configureRouter(config, router, params) {
+        this.router = router;
+        this.id = params.id;
 
-return ajaxToGetUser(this.id).then(user => {
-let routes = [
-{
-route: '', name: 'details', title: 'Details',
-nav: true, moduleId: './user/details'
-}
-];
+        return ajaxToGetUser(this.id).then(user => {
+            let routes = [
+                {
+                    route: '', name: 'details', title: 'Details',
+                    nav: true, moduleId: './user/details'
+                }
+            ];
 
-if (user.isAdmin) {
-routes.push({
-route: 'admin', name: 'admin', title: 'Admin',
-nav: true, moduleId: './user/admin'
-});
-}
+            if (user.isAdmin) {
+                routes.push({
+                    route: 'admin', name: 'admin', title: 'Admin',
+                    nav: true, moduleId: './user/admin'
+                });
+            }
 
-config.map(routes);
-});
-}
+            config.map(routes);
+        });
+    }
 }
 ```
 
