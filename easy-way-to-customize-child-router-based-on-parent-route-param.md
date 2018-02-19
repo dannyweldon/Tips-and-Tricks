@@ -40,4 +40,4 @@ In addition, now you have user instance while build the routes table, which mean
 
 > Note: this undocumented feature is safe to use, [it is here to stay](https://github.com/aurelia/router/issues/547).
 
-> Note: please don't abuse this feature. Dynamic routes are not encouraged by @davismj (the current aurelia-router maintainer), [read more about his opinion here](https://discourse.aurelia.io/t/the-easy-way-to-customize-child-router-based-on-parent-router-param/768/11?u=huochunpeng).
+> Note: please don't abuse this feature. Dynamic routes are not encouraged by @davismj (the current aurelia-router maintainer), [read more about his opinion here](https://discourse.aurelia.io/t/the-easy-way-to-customize-child-router-based-on-parent-router-param/768/11).
