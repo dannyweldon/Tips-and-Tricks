@@ -1,4 +1,4 @@
-### easy way to customize child router based on parent route param
+### Easy way to customize child router based on parent route param
 
 The problem we want to resolve:
 
